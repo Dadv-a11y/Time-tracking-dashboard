@@ -57,7 +57,7 @@ button{
     color: var(--DesaturatedBlue);
     border: none;
 }
-button:active{
+button:hover{
     color: white;
 }
 .time{
@@ -115,15 +115,13 @@ button:active{
     background-image: url("images/icon-self-care.svg");
 }
 
-/* .daily{
+ #daily{
     display: none;
-} */
-/* .monthly{
+ }
+ #monthly {
     display: none;
-} */
-/* .weekly{
-     display: none; 
-}  */
+} 
+
 h2{
     display: flex;
     flex-direction: row;
@@ -138,21 +136,52 @@ h2 span{
     justify-content: right;
     padding-right: 10px;
 }
-@media screen and (min-width:1024px) {
+
+@media screen and (min-width:1024px)  {
     
     body{
-        display: grid;
-        grid-template-areas: "head work play study"
-                             "head exercise social selfcare"
-                             "att  att    att    att";
-    
-        grid-template-rows: auto ;
-        grid-template-columns: 50vh auto;
+        
+        display: flex;
+        flex-direction: row;
         column-gap: 20px;
-        row-gap: 5px;
         transform: scale(0.75);
-        height: 50vh;
-                            }
+         height: 50vh;
+        }
+  .weekly{
+    display: grid;
+    grid-template-areas: " work play study"
+                         " exercise social selfcare";
+   grid-template-rows: auto ;
+   grid-template-columns: auto;
+   column-gap: 20px;
+   row-gap: 10px;
+   width: 130vh;
+   
+   
+  }
+  .daily{
+    
+    display: grid;
+    grid-template-areas: " work play study"
+                         " exercise social selfcare";
+   grid-template-rows: auto ;
+   grid-template-columns: auto;
+   column-gap: 20px;
+  row-gap: 10px;
+  width: 130vh;
+  }
+  .monthly{
+    
+    display: grid;
+    grid-template-areas: " work play study"
+                         " exercise social selfcare";
+   grid-template-rows: auto ;
+   grid-template-columns: auto;
+   column-gap: 20px;
+  row-gap: 10px;
+  width: 130vh;
+  }
+
   .Work{
     grid-area: work;
   }
@@ -172,7 +201,8 @@ h2 span{
     grid-area: social;
   }
   .head{
-    grid-area: head;
+    width: 70vh;
+    height: 100vh;
   }
   .attribution{
     grid-area: att;
@@ -196,4 +226,17 @@ h2 span{
   h1{
     font-size: 3em;
   }
+ .attribution{
+    display: none;
+ }
 }
+@media screen and (min-height:700px)  and (min-width:1024px) {
+   .head{
+    height: 84vh;
+   }
+}
+@media screen and (max-height:700px) and (min-width:1024px) {
+    .head{
+     height: 109vh;
+    }
+ }
