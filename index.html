@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+ <section class="head">
+  <div class="profile">
+    <div class="img"> <img src="images\image-jeremy.png" alt="image-jeremy" ></div>
+    <div class="name">  Report for <br>Jeremy Robson  </div>
+    </div>
+    <div class="buttons">
+     <button  onclick="dailybtn()" > daily</button>
+     <button  onclick="weeklybtn()" > Weekly</button>
+     <button  onclick="monthlybtn()">Monthly</button>
+    </div>
+    
+ </section>
+
+  <section class="Work">
+
+  <div class="background-img"></div>
+    <div class="time">
+       <h2> Work <span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
+  <div id="workTimeframes"></div>
+  </div>
+
+  </section>
+
+ <section class="play">
+
+  <div class="background-img"></div>
+ <div class="time">
+  <h2> Play<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
+  <div id="playTimeframes"></div>  
+</div>
+
+ </section>
+ 
+ <section class=" Study">
+
+  <div class="background-img"></div>
+ <div class="time">
+  <h2> Study<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
+  <div id="studyTimeframes"></div>
+  </div>
+
+  </section>
+
+  <section class=" Exercise">
+
+    <div class="background-img"></div>
+   <div class="time">
+    <h2> Exercise<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
+    <div id="ExerciseTimeframes"></div>
+   </div>
+    </section>
+  
+  <section class=" Social">
+
+    <div class="background-img"></div>
+    <div class="time">
+      <h2>  Social<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
+      <div id="socialTimeframes"></div>
+    </div>
+
+    </section>
+
+  <section class=" SelfCare">
+
+    <div class="background-img"></div>
+   <div class="time">
+    <h2> Self Care<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
+    <div class="selfcareTimeframes"></div>
+   </div>
+
+    </section>
+  
+  <section class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Dadv-a11y">DADV</a>.
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

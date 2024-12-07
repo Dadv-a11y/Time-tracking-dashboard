@@ -1,0 +1,199 @@
+:root{
+    --Blue: hsl(246, 80%, 60%);
+--LightRed : hsl(15, 100%, 70%); /*(work)*/
+--SoftBlue : hsl(195, 74%, 62%);/*(play)*/
+--LightReds : hsl(348, 100%, 68%); /*(study)*/
+--LimeGreen : hsl(145, 58%, 55%);/* (exercise)*/
+--Violet: hsl(264, 64%, 52%); /* (social)*/
+--SoftOrange : hsl(43, 84%, 65%); /*(self care)*/
+--VeryDarkBlue: hsl(226, 43%, 10%);
+--DarkBlue: hsl(235, 46%, 20%);
+--DesaturatedBlue: hsl(235, 45%, 61%);
+--PaleBlue: hsl(236, 100%, 87%);
+}
+body{
+    color: white;
+    background-color: var(--VeryDarkBlue);
+    padding: 20px;
+}
+section{
+    border: var(--VeryDarkBlue) solid;
+    margin-bottom: 20px;
+}
+
+p{
+    color: var(--DesaturatedBlue);
+   
+}
+.img img{
+    width: 50px;
+    border: white solid;
+    border-radius: 50px;
+}
+.name{
+    padding-top: 6px;
+}
+.profile{
+    background-color: var(--Blue);
+    border-radius: 10px;
+    padding: 5% 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: white;
+}
+.head{
+    background-color: var(--DarkBlue);
+    border-radius: 10px;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5% 10px;
+}
+button{
+    background-color: var(--DarkBlue);
+    color: var(--DesaturatedBlue);
+    border: none;
+}
+button:active{
+    color: white;
+}
+.time{
+    background-color: var(--DarkBlue);
+    border-radius: 20px;
+    border-bottom-left-radius:18px ;
+    border-bottom-right-radius:18px ;
+    padding: 5% 30px;
+}
+.Work{
+    background-color: var(--LightRed);
+    border-radius: 20px;
+}
+.background-img{
+    background-repeat: no-repeat;
+    background-position: top right 20px;
+    height: 50px;
+}
+.Work .background-img{
+    background-image: url("images/icon-work.svg");
+}
+.play{
+    background-color: var(--SoftBlue);
+    border-radius: 20px;
+}
+.play .background-img{
+    background-image: url("images/icon-play.svg");
+}
+.Study{
+    background-color: var(--LightReds);
+    border-radius: 20px;
+}
+.Study .background-img{
+    background-image: url("images/icon-study.svg");
+}
+.Exercise{
+    background-color: var(--LimeGreen);
+    border-radius: 20px;
+}
+.Exercise .background-img{
+    background-image: url("images/icon-exercise.svg");
+}
+.Social{
+    background-color: var(--Violet);
+    border-radius: 20px;
+}
+.Social .background-img{
+    background-image: url("images/icon-social.svg");
+}
+.SelfCare {
+    background-color: var(--SoftOrange);
+    border-radius: 20px;
+}
+.SelfCare .background-img{
+    background-image: url("images/icon-self-care.svg");
+}
+
+/* .daily{
+    display: none;
+} */
+/* .monthly{
+    display: none;
+} */
+/* .weekly{
+     display: none; 
+}  */
+h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h2 span{
+  display: block;
+}
+.background-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-right: 10px;
+}
+@media screen and (min-width:1024px) {
+    
+    body{
+        display: grid;
+        grid-template-areas: "head work play study"
+                             "head exercise social selfcare"
+                             "att  att    att    att";
+    
+        grid-template-rows: auto ;
+        grid-template-columns: 50vh auto;
+        column-gap: 20px;
+        row-gap: 5px;
+        transform: scale(0.75);
+        height: 50vh;
+                            }
+  .Work{
+    grid-area: work;
+  }
+  .Exercise{
+    grid-area: exercise ;
+  }
+  .SelfCare{
+    grid-area: selfcare;
+  }
+  .play{
+    grid-area: play;
+  }
+  .study{
+    grid-area: study;
+  }
+  .Social{
+    grid-area: social;
+  }
+  .head{
+    grid-area: head;
+  }
+  .attribution{
+    grid-area: att;
+    font-size: 2em;
+  }
+  .profile{
+   display: flex;
+    flex-direction: column;
+    font-size: 2em;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+  }
+  button{
+    padding: 10px 0;
+  }
+  .profile{
+    padding-bottom: 8em;
+  }
+  h1{
+    font-size: 3em;
+  }
+}
