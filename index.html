@@ -6,7 +6,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
@@ -17,279 +19,83 @@
   </style>
 </head>
 <body>
-  
-  <section class="head">
-    <div class="profile">
-      <div class="img"> <img src="images\image-jeremy.png" alt="image-jeremy" ></div>
-      <div class="name">  Report for <br>Jeremy Robson  </div>
-      </div>
-      <div class="buttons">
-       <button  onclick="dailybtn()" id="dailybtn" > daily</button>
+
+ <section class="head">
+  <div class="profile">
+    <div class="img"> <img src="images\image-jeremy.png" alt="image-jeremy" ></div>
+    <div class="name">  Report for <br>Jeremy Robson  </div>
+    </div>
+    <div class="buttons">
+      <button  onclick="dailybtn()" id="dailybtn" > daily</button>
        <button  onclick="weeklybtn()" id="weeklybtn" > Weekly</button>
        <button  onclick="monthlybtn()" id="monthlybtn">Monthly</button>
-      </div>
-      
-   </section>
-  
-    <section  id="daily">
-
-      <div class="daily">
-
-        <section class="Work">
-  
-          <div class="background-img"></div>
-            <div class="time">
-               <h2> Work <span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-          <div class="Timeframes">
-            <h1 class="current"> 5hrs </h1> 
-            <p> last day - 7hrs</p> 
-          </div>
-          </div>
-        
-          </section>
-        
-         <section class="play">
-        
-          <div class="background-img"></div>
-         <div class="time">
-          <h2> Play<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-          <div class="Timeframes">
-            <h1 class="current">  1hr </h1> 
-            <p> last day -2hrs</p>
-          </div>  
-        </div>
-        
-         </section>
-         
-         <section class=" Study">
-        
-          <div class="background-img"></div>
-         <div class="time">
-          <h2> Study<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-          <div class="Timeframes">
-            <h1 class="current"> 0hrs </h1> 
-            <p> last day -1hr</p>
-          </div>
-          </div>
-        
-          </section>
-        
-          <section class=" Exercise">
-        
-            <div class="background-img"></div>
-           <div class="time">
-            <h2> Exercise<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-            <div class="Timeframes">
-              <h1 class="current">  1hr </h1> 
-              <p> last day -1hr</p>
-            </div>
-           </div>
-            </section>
-          
-          <section class=" Social">
-        
-            <div class="background-img"></div>
-            <div class="time">
-              <h2>  Social<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-              <div class="Timeframes">
-                <h1 class="current">  1hr </h1> 
-                <p> last day -3hrs</p>
-              </div>
-            </div>
-        
-            </section>
-        
-          <section class=" SelfCare">
-        
-            <div class="background-img"></div>
-           <div class="time">
-            <h2> Self Care<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-            <div class="Timeframes">
-              <h1 class="current"> 0hrs </h1> 
-              <p> last day -1hr </p>
-            </div>
-           </div>
-        
-            </section>
-
-      </div>
-
-    </section>
+    </div>
     
-    <section id="monthly">
+ </section>
 
-    <div class="monthly">
-
-      <section class="Work">
-  
-        <div class="background-img"></div>
-          <div class="time">
-             <h2> Work <span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-             <div class="Timeframes">
-              <h1 class="current"> 103hrs </h1> 
-              <p> last month - 128hrs</p> 
-            </div>
-        </div>
-      
-        </section>
-      
-       <section class="play">
-      
-        <div class="background-img"></div>
-       <div class="time">
-        <h2> Play<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-        <div class="Timeframes">
-          <h1 class="current">  23hrs </h1> 
-          <p> last month - 29hrs</p> 
-        </div> 
-      </div>
-      
-       </section>
-       
-       <section class=" Study">
-      
-        <div class="background-img"></div>
-       <div class="time">
-        <h2> Study<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-        <div class="Timeframes">
-          <h1 class="current"> 13hrs </h1> 
-          <p> last month - 19hrs</p> 
-        </div> 
-        </div>
-      
-        </section>
-      
-        <section class=" Exercise">
-      
-          <div class="background-img"></div>
-         <div class="time">
-          <h2> Exercise<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-          <div class="Timeframes">
-            <h1 class="current">11hrs </h1> 
-            <p> last month - 18hrs</p> 
-          </div> 
-         </div>
-          </section>
-        
-        <section class=" Social">
-      
-          <div class="background-img"></div>
-          <div class="time">
-            <h2>  Social<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-            <div class="Timeframes">
-              <h1 class="current"> 21hrs  </h1> 
-              <p> last month - 23hrs</p> 
-            </div> 
-          </div>
-      
-          </section>
-      
-        <section class=" SelfCare">
-      
-          <div class="background-img"></div>
-         <div class="time">
-          <h2> Self Care<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-          <div class="Timeframes">
-            <h1 class="current">  7hrs   </h1> 
-            <p> last month - 11hrs </p> 
-          </div> 
-         </div>
-      
-          </section>
-
-    </div>
-
-    </section>
-
-    <section id="weekly">
-
-    <div class="weekly">
-
-      <section class="Work">
-  
-        <div class="background-img"></div>
-          <div class="time">
-             <h2> Work <span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-             <div class="Timeframes">
-              <h1 class="current">32hrs </h1> 
-              <p> last week -36hrs </p>
-            </div>
-        </div>
-      
-        </section>
-      
-       <section class="play">
-      
-        <div class="background-img"></div>
-       <div class="time">
-        <h2> Play<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-        <div class="Timeframes">
-          <h1 class="current">10hrs </h1> 
-          <p> last week -8hrs  </p>
-        </div>  
-      </div>
-      
-       </section>
-       
-       <section class=" Study">
-      
-        <div class="background-img"></div>
-       <div class="time">
-        <h2> Study<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-        <div class="Timeframes">
-          <h1 class="current">4hrs  </h1> 
-          <p> last week - 7hrs  </p>
-        </div>  
-        </div>
-      
-        </section>
-      
-        <section class=" Exercise">
-      
-          <div class="background-img"></div>
-         <div class="time">
-          <h2> Exercise<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-          <div class="Timeframes">
-            <h1 class="current">4hrs  </h1> 
-            <p> last week -5hrs  </p>
-          </div> 
-         </div>
-          </section>
-        
-        <section class=" Social">
-      
-          <div class="background-img"></div>
-          <div class="time">
-            <h2>  Social<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-            <div class="Timeframes">
-              <h1 class="current"> 5hrs </h1> 
-              <p> last week -10hrs </p>
-            </div> 
-          </div>
-      
-          </section>
-      
-        <section class=" SelfCare">
-      
-          <div class="background-img"></div>
-         <div class="time">
-          <h2> Self Care<span><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></span></h2>
-          <div class="Timeframes">
-            <h1 class="current"> 2hrs </h1> 
-            <p> last week - 2hrs </p>
-          </div> 
-         </div>
-      
-          </section>
-
-    </div>
-
-    </section>
- 
-  <script src="script.js"></script>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <section class="Work">
+   
+  <div class="background-img"></div>
+    <div class="time">
+       <h2> Work <a href=""><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></a ></h2>
+  <div id="workTimeframes"></div>
   </div>
+
+  </section>
+
+ <section class="play">
+
+  <div class="background-img"></div>
+ <div class="time">
+  <h2> Play<a href=""><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></a ></h2>
+  <div id="playTimeframes"></div>  
+</div>
+
+ </section>
+ 
+ <section class=" Study">
+
+  <div class="background-img"></div>
+ <div class="time">
+  <h2> Study<a href=""><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></a ></h2>
+  <div id="studyTimeframes"></div>
+  </div>
+
+  </section>
+
+  <section class=" Exercise">
+
+    <div class="background-img"></div>
+   <div class="time">
+    <h2> Exercise<a href=""><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></a></h2>
+    <div id="ExerciseTimeframes"></div>
+   </div>
+    </section>
+  
+  <section class=" Social">
+
+    <div class="background-img"></div>
+    <div class="time">
+      <h2>  Social<a href=""><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></a></h2>
+      <div id="socialTimeframes"></div>
+    </div>
+
+    </section>
+
+  <section class=" SelfCare">
+
+    <div class="background-img"></div>
+   <div class="time">
+    <h2> Self Care<a href=""><img src="images\icon-ellipsis.svg" alt="icon-ellipsis"></a></h2>
+    <div id="selfcareTimeframes"></div>
+   </div>
+
+    </section>
+  
+  <section class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Dadv-a11y">DADV</a>.
+  </section>
+  <script src="script.js"></script>
 </body>
 </html>
